@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     float frontback = 1f;
     void Awake()
     {
-        direction = Vector3.right * 5;
+        direction = transform.right * 5;
         owner = transform.position;
         laser = transform.GetChild(1).gameObject;
     }
